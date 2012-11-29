@@ -2,7 +2,7 @@
     "name": "aferrandini/ferrandinitwigextension",
     "description": "Ferrandini Twig Extension",
     "keywords": ["twig","extension"],
-    "homepage": "https://github.com/aferrandini/FerrandiniTwigExtension"
+    "homepage": "https://github.com/aferrandini/FerrandiniTwigExtension",
     "type": "library",
     "license": "MIT",
     "authors": [
