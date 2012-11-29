@@ -20,6 +20,7 @@
         "twig/extensions": "1.0.*"
     },
     "autoload": {
-        "psr-0": { "Ferrandini\\": "src/" }
-    }
+        "psr-0": { "Ferrandini\\Bundle\\TwigExtensionBundle": "" }
+    },
+    "target-dir": "Ferrandini/Bundle/TwigExtensionBundle"
 }
