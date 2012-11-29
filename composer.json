@@ -1,0 +1,25 @@
+{
+    "name": "aferrandini/ferrandinitwigextension",
+    "description": "Ferrandini Twig Extension",
+    "keywords": ["twig","extension"],
+    "homepage": "https://github.com/aferrandini/FerrandiniTwigExtension"
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ariel Ferrandini",
+            "email": "arielferrandini@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "symfony/symfony": "2.1.x-dev",
+        "twig/twig": "1.*"
+    },
+    "suggest": {
+        "twig/extensions": "1.0.*"
+    },
+    "autoload": {
+        "psr-0": { "Ferrandini\\": "src/" }
+    }
+}
