@@ -66,9 +66,9 @@ class FerrandiniExtension extends \Twig_Extension
     public function convertTime($time, $format = null)
     {
         if (empty ($format)) {
-            if ($time > 3600) {
+            if ($time >= 3600) {
                 $format = 'H:i:s';
-            } elseif ($time > 60) {
+            } elseif ($time >= 60) {
                 $format = 'i:s';
             } else {
                 $format = 's';
