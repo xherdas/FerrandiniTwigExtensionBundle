@@ -30,7 +30,8 @@ class FerrandiniExtension extends \Twig_Extension
     public function getFunctions()
     {
         return array(
-            'route_located' => new \Twig_Function_Method($this, 'routeLocated')
+            'route_located' => new \Twig_Function_Method($this, 'routeLocated'),
+            'convert_time' => new \Twig_Function_Method($this, 'convertTime'),
         );
     }
 
@@ -53,6 +54,28 @@ class FerrandiniExtension extends \Twig_Extension
         }
 
         return $this->router->generate($route_name, $parameters->all(), $absolute);
+    }
+
+    /**
+     * Convert time in seconds to unit
+     *
+     * @param $time
+     * @param string $format
+     * @return string
+     */
+    public function convertTime($time, $format = null)
+    {
+        if (empty ($format)) {
+            if ($time > 3600) {
+                $format = 'H:i:s';
+            } elseif ($time > 60) {
+                $format = 'i:s';
+            } else {
+                $format = 's';
+            }
+        }
+
+        return gmdate($format, $time);
     }
 
     /**
