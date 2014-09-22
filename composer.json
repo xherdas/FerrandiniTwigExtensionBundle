@@ -1,8 +1,8 @@
 {
-    "name": "aferrandini/ferrandinitwigextension",
+    "name": "xherdas/ferrandinitwigextension",
     "description": "Ferrandini Twig Extension",
     "keywords": ["twig","extension"],
-    "homepage": "https://github.com/aferrandini/FerrandiniTwigExtension",
+    "homepage": "https://github.com/xherdas/FerrandiniTwigExtension",
     "type": "library",
     "license": "MIT",
     "authors": [
